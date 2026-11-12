@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#16090e" />
+    <title>Agatha, isso aqui é culpa sua ♡</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="petals" id="petals" aria-hidden="true"></div>
+    <main>
+      <section class="hero" id="inicio">
+        <div class="ornament">
+          ✦ &nbsp; uma correspondência suspeitamente romântica &nbsp; ✦
+        </div>
+        <div class="moon" aria-hidden="true">☾</div>
+        <p class="eyebrow">
+          para a senhorita mais perigosa da minha lista de conversas
+        </p>
+        <h1>Agatha, <em>isso aqui</em><br />é culpa sua.</h1>
+        <p class="hero-text">
+          Eu podia ter mandado só um “oi, tudo bem?”.<br />Mas aparentemente eu
+          não sei gostar de alguém de um jeito normal.
+        </p>
+        <button class="btn primary" id="startBtn">
+          Investigar essa acusação <span>↘</span>
+        </button>
+        <p class="small-note">
+          aviso: contém sentimentos e uma quantidade questionável de charme
+        </p>
+        <div class="scroll-decoration" aria-hidden="true">✧ ─── ♡ ─── ✧</div>
+      </section>
+
+      <section class="chapter hidden" id="capitulo" aria-live="polite">
+        <div class="section-head">
+          <span>CAPÍTULO I</span><span>um caso gravíssimo</span>
+        </div>
+        <h2>Você está sendo <em>acusada...</em></h2>
+        <p>
+          ...de fazer minhas conversas ficarem melhores, de me arrancar uns
+          sorrisos do nada e de ser uma pessoa que eu quero conhecer cada vez
+          mais.
+        </p>
+        <div class="evidence">
+          <div>
+            <span class="evidence-icon">✧</span><strong>Prova nº 01</strong>
+            <p>Eu gosto de conversar com você. Tipo, bastante.</p>
+          </div>
+          <div>
+            <span class="evidence-icon">♡</span><strong>Prova nº 02</strong>
+            <p>Às vezes lembro de você e começo a sorrir igual um idiota.</p>
+          </div>
+          <div>
+            <span class="evidence-icon">☾</span><strong>Prova nº 03</strong>
+            <p>Eu fiz literalmente um site. Preciso dizer mais alguma coisa?</p>
+          </div>
+        </div>
+        <p class="aside">
+          A defesa pode alegar que sou dramático. A defesa provavelmente está
+          certa.
+        </p>
+        <button class="btn secondary" id="letterBtn">
+          Ver a prova principal <span>✉</span>
+        </button>
+      </section>
+
+      <section class="letter-section hidden" id="carta">
+        <div class="section-head">
+          <span>CAPÍTULO II</span><span>material confidencial</span>
+        </div>
+        <h2>Uma carta <em>pra você.</em></h2>
+        <p class="instruction">
+          Toque no envelope. Prometo que não tem boleto.
+        </p>
+        <button
+          class="envelope"
+          id="envelope"
+          aria-label="Abrir carta para Agatha"
+          aria-expanded="false"
+        >
+          <span class="envelope-flap"></span
+          ><span class="envelope-seal">♡</span>
+          <span class="envelope-label">A. ♡</span>
+        </button>
+        <article class="letter-paper" id="letterPaper" hidden>
+          <p class="letter-top">para Agatha, com um pouquinho de coragem</p>
+          <h3>Minha querida suspeita,</h3>
+          <p>
+            Eu não sei exatamente em que momento nossas conversas começaram a
+            ficar tão especiais, mas sei que gosto muito de estar conhecendo
+            você.
+          </p>
+          <p>
+            Tem alguma coisa no seu jeito que me dá vontade de ficar cada vez
+            mais próximo de você, conversar sobre qualquer besteira e descobrir
+            mais um pedacinho de quem você é.
+          </p>
+          <p>
+            Não quero apressar nada. Só queria te fazer sorrir e dizer, do meu
+            jeito meio esquisito, que
+            <strong>você já virou uma parte muito legal dos meus dias.</strong>
+          </p>
+          <p>
+            Se você estiver sorrindo agora, saiba que meu plano maligno foi um
+            sucesso.
+          </p>
+          <p class="signature">
+            Com carinho e zero dignidade restante,<br /><strong
+              >gabrielpimbas ♡</strong
+            >
+          </p>
+        </article>
+        <div class="next-step hidden" id="nextStep">
+          <button class="btn secondary" id="verdictBtn">
+            Dar seu veredito <span>⚖</span>
+          </button>
+        </div>
+      </section>
+
+      <section class="final-section hidden" id="veredito">
+        <div class="section-head">
+          <span>CAPÍTULO III</span><span>o grande julgamento</span>
+        </div>
+        <div class="final-symbol">♥</div>
+        <h2>Então, <em>Agatha...</em></h2>
+        <p>Depois de analisar todas as provas, você considera este cidadão:</p>
+        <div class="choices">
+          <button class="btn primary" data-verdict="fofo">
+            Culpado de ser fofo ♡
+          </button>
+          <button class="btn secondary" data-verdict="bobo">
+            Culpado de ser bobo ✧
+          </button>
+        </div>
+        <div class="result" id="result" role="status" aria-live="polite"></div>
+        <p class="footer-note">
+          De gabrielpimbas para agathapimbas, com carinho.
+        </p>
+      </section>
+    </main>
+  </body>
+</html>
